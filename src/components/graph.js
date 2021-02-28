@@ -117,18 +117,32 @@ const Graph = () => {
     const style_infected = {
         fontWeight: "bold",
         color: "red",
-        fontSize: "2em",
+        fontSize: "2vw",
     };
     const style_explain = {
-        fontSize: "1.5em",
+        fontSize: "1vw",
     };
+
+    const style_infected_person = {
+        fontSize: "2vw",
+        padding: "0.5vw",
+    };
+
+    const chart_container = {
+        width: "90vw",
+        height: "20vw",
+        margin: "auto",
+        padding: "5vw",
+    }
 
     return (
         <div onDoubleClick={currentChart.resetZoom}>
-            <header className="Infected">{latestDate} の 感染者 は <span style={style_infected}>{latestInfected}</span> 人です</header>
+            <header style={style_infected_person}>{latestDate} の 感染者 は <span style={style_infected}>{latestInfected}</span> 人です</header>
             <div style={style_explain}>ドラッグして範囲選択をすることで範囲を狭めることができます</div>
             <div style={style_explain}>ダブルクリックで元の倍率のグラフに戻すことができます</div>
-            <Bar data={fetchData} options={options}></Bar>
+            <div style={chart_container}>
+                <Bar data={fetchData} options={options}></Bar>
+            </div>
         </div>
     );
 };
