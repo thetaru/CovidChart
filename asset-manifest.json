@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/CovidChart/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/CovidChart/static/js/main.07a67117.chunk.js",
-    "main.js.map": "/CovidChart/static/js/main.07a67117.chunk.js.map",
+    "main.css": "/CovidChart/static/css/main.bd2f8023.chunk.css",
+    "main.js": "/CovidChart/static/js/main.a8a995ab.chunk.js",
+    "main.js.map": "/CovidChart/static/js/main.a8a995ab.chunk.js.map",
     "runtime-main.js": "/CovidChart/static/js/runtime-main.dd06ad3b.js",
     "runtime-main.js.map": "/CovidChart/static/js/runtime-main.dd06ad3b.js.map",
     "static/js/2.973df172.chunk.js": "/CovidChart/static/js/2.973df172.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.16637d6d.chunk.js": "/CovidChart/static/js/3.16637d6d.chunk.js",
     "static/js/3.16637d6d.chunk.js.map": "/CovidChart/static/js/3.16637d6d.chunk.js.map",
     "index.html": "/CovidChart/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/CovidChart/static/css/main.8c8b27cf.chunk.css.map",
+    "static/css/main.bd2f8023.chunk.css.map": "/CovidChart/static/css/main.bd2f8023.chunk.css.map",
     "static/js/2.973df172.chunk.js.LICENSE.txt": "/CovidChart/static/js/2.973df172.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dd06ad3b.js",
     "static/js/2.973df172.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.07a67117.chunk.js"
+    "static/css/main.bd2f8023.chunk.css",
+    "static/js/main.a8a995ab.chunk.js"
   ]
 }
