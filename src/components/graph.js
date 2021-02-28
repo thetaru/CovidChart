@@ -31,6 +31,7 @@ const fetched = async () => {
                     bordorWidth: 1,
                     hoverBackgroundColor: 'rgba(255,100,100,0.9)',
                     hoverBordorColor: 'rgba(255,100,100,1)',
+                    pointHitRadius: 20,
                 },
             ]
         };
@@ -56,32 +57,30 @@ const Graph = () => {
         }).catch(err => {
             console.log(err);
         });
-    }, [ fetchData ]);
+    }, [ fetchData, latestDate, latestInfected, currentChart ]);
     
     const options = {
         responsive: true,
         maintainAspectRatio: false,
-        legend: {
-            display: false
-        },
         scales: {
             yAxes: [{
                 display: true,
                 scaleLabel: {
                     display: true,
-                    fontSize: 16
+                    fontSize: 15,
                 },
             }],
             xAxes: [{
                 type: 'time',
                 time: {
-                    unit: 'day'
+                    unit: 'day',
+                    minUnit: 'day',
                 },
                 distributions: 'series',
                 display: true,
                 scaleLabel: {
                     display: true,
-                    fontSize: 1
+                    fontSize: 15,
                 },
             }],
         },
@@ -96,20 +95,21 @@ const Graph = () => {
                         animationDuration: 0
                     },
                     mode: 'x',
-                    rangeMin: {
-                        x: null,
-                        y: null
-                    },
-                    rangeMax: {
-                        x: null,
-                        y: null
-                    },
                     speed: 0.1,
                     onZoom: function({chart}) {
                         setChart(chart);
                     }
                 },
             },
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true,
+            animationDuration: 0
         },
     };
 
