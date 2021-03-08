@@ -130,7 +130,7 @@ const Graph = () => {
 
     const chart_container = {
         width: "90vw",
-        height: "20vw",
+        height: "85vw",
         margin: "auto",
         padding: "5vw",
     }
